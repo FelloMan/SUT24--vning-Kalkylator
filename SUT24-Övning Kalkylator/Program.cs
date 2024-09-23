@@ -32,7 +32,17 @@
             
         
         }
+        public static int SquareRoot(int firstSquare, int secondSquare)
+        {
+            int squareSum = firstSquare % secondSquare;
+            return squareSum;
+        }
 
+        public static int AreaTriangel(int firstTriangel, int secondTriangel)
+        {
+            int areaSum = firstTriangel * secondTriangel / 2;
+            return areaSum;
+        }
 
 
     }

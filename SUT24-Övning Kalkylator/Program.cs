@@ -25,7 +25,9 @@ namespace SUT24_Övning_Kalkylator
                 Console.WriteLine("5. Upphöj");
                 Console.WriteLine("6. Kvadratrot");
                 Console.WriteLine("7. Arean av triangel");
-                Console.WriteLine("8. Avsluta program");
+                Console.WriteLine("8. Arean av kvadrat");
+                Console.WriteLine("9. Arean av cirkel");
+                Console.WriteLine("10. Avsluta program");
 
                 string menuChoice = Console.ReadLine();
 
@@ -81,11 +83,11 @@ namespace SUT24_Övning_Kalkylator
                     case "6":
                         Console.WriteLine("Välj ett nummer");
 
-                        double a = Convert.ToInt32(Console.ReadLine());
+                        num1 = Convert.ToInt32(Console.ReadLine());
 
-                        double resultSquareRoot = Math.Sqrt(a);
+                        double sqaureRoot = SqaureRoot(num1);
 
-                        Console.WriteLine($"Resultatet blev: {resultSquareRoot}");
+                        Console.WriteLine($"Resultatet blev: {sqaureRoot}");
                         break;
                     case "7":
                         Console.WriteLine("Välj basen");
@@ -99,6 +101,25 @@ namespace SUT24_Övning_Kalkylator
                         Console.WriteLine($"Resultatet blev: {result}");
                         break;
                     case "8":
+                        Console.WriteLine("Välj basen");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Välj höjden");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+
+                        result = AreaOfSquare(num1, num2);
+
+                        Console.WriteLine($"Resultatet blev: {result}");
+                        break;
+                    case "9":
+                        Console.WriteLine("Välj radien");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+
+                        double areaOfCircle = AreaCircle(num1);
+
+                        Console.WriteLine($"Resultatet blev: {areaOfCircle}");
+                        break;
+                    case "10":
                         programOn = false;
                         break;
                     default:
@@ -167,6 +188,11 @@ namespace SUT24_Övning_Kalkylator
             return sumAreaCircle;
         }
 
+        public static double SqaureRoot(double root)
+        {
+            double squareRoot = Math.Sqrt(root);
+            return squareRoot;
+        }
         
 
 

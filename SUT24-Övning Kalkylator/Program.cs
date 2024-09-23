@@ -22,7 +22,10 @@ namespace SUT24_Övning_Kalkylator
                 Console.WriteLine("2. Subtraktion");
                 Console.WriteLine("3. Multiplíkation");
                 Console.WriteLine("4. Division");
-                Console.WriteLine("5. Avsluta program");
+                Console.WriteLine("5. Upphöj");
+                Console.WriteLine("6. Kvadratrot");
+                Console.WriteLine("7. Arean av triangel");
+                Console.WriteLine("8. Avsluta program");
 
                 string menuChoice = Console.ReadLine();
 
@@ -65,6 +68,37 @@ namespace SUT24_Övning_Kalkylator
                         Console.WriteLine($"Resultatet blev: {result}");
                         break;
                     case "5":
+                        Console.WriteLine("Välj basen");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Välj hur mycket du vill upphöja med");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+
+                        double sumElevated = Elevated(num1, num2);
+
+                        Console.WriteLine($"Resultatet blev: {sumElevated}");
+                        break;
+                    case "6":
+                        Console.WriteLine("Välj ett nummer");
+
+                        double a = Convert.ToInt32(Console.ReadLine());
+
+                        double resultSquareRoot = Math.Sqrt(a);
+
+                        Console.WriteLine($"Resultatet blev: {resultSquareRoot}");
+                        break;
+                    case "7":
+                        Console.WriteLine("Välj basen");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Välj höjden");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+
+                        result = AreaTriangel(num1, num2);
+
+                        Console.WriteLine($"Resultatet blev: {result}");
+                        break;
+                    case "8":
                         programOn = false;
                         break;
                     default:
@@ -82,9 +116,6 @@ namespace SUT24_Övning_Kalkylator
             int userAnswear = userDivison / userDivison2;
             return userAnswear;
         }
-
-
-
 
 
         public static int Add(int addFirstNumb, int addSecondNumb)
@@ -113,11 +144,6 @@ namespace SUT24_Övning_Kalkylator
         { 
             double sumElevated = Math.Pow(doubleToRaised, doubleToBeRaised);
             return sumElevated;
-        }
-        public static int SquareRoot(int firstSquare, int secondSquare)
-        {
-            int squareSum = firstSquare % secondSquare;
-            return squareSum;
         }
 
         public static int AreaTriangel(int firstTriangel, int secondTriangel)

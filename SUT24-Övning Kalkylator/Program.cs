@@ -65,6 +65,11 @@
             
         
         }
-        //m
+        public static double Elevated(double doubleToRaised, double doubleToBeRaised) 
+        { 
+            double sumElevated = Math.Pow(doubleToRaised, doubleToBeRaised);
+            return sumElevated;
+        
+        }
     }
 }

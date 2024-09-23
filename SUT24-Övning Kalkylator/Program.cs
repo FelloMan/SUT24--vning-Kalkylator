@@ -44,6 +44,12 @@
             return areaSum;
         }
 
+        public static int AreaOfSquare(int firstAreaSquare, int secondAreaSquare)
+        {
+            int areaOfSquare = firstAreaSquare * secondAreaSquare;
+            return areaOfSquare;
+        }
+
 
     }
 }

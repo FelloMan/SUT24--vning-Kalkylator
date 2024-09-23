@@ -113,7 +113,22 @@ namespace SUT24_Övning_Kalkylator
         { 
             double sumElevated = Math.Pow(doubleToRaised, doubleToBeRaised);
             return sumElevated;
-        
         }
+        public static int SquareRoot(int firstSquare, int secondSquare)
+        {
+            int squareSum = firstSquare % secondSquare;
+            return squareSum;
+        }
+
+        public static int AreaTriangel(int firstTriangel, int secondTriangel)
+        {
+            int areaSum = firstTriangel * secondTriangel / 2;
+            return areaSum;
+        }
+
+
+
+        
+
     }
 }

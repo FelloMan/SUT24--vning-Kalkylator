@@ -151,5 +151,15 @@ namespace SUT24_Övning_Kalkylator
             int areaSum = firstTriangel * secondTriangel / 2;
             return areaSum;
         }
+
+        public static double AreaCircle (double circleRadius) //Cirkel
+        {
+
+            double sumAreaCircle = Math.PI * circleRadius * circleRadius ;
+            return sumAreaCircle;
+        }
+
+        
+
     }
 }

@@ -18,5 +18,22 @@
         
 
         
+        public static int Subtract(int subFirstNumb, int subSecondNumb)
+        { 
+            int sumSubtract = subFirstNumb - subSecondNumb;
+            return sumSubtract;
+        
+        }
+
+        public static int Multiply(int multiFirstNumb, int multiSecondNumb)  
+        { 
+            int multiplySum = multiFirstNumb * multiSecondNumb; 
+            return multiplySum;
+            
+        
+        }
+
+
+
     }
 }

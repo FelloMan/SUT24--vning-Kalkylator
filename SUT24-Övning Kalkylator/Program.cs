@@ -33,6 +33,15 @@
 
 
 
+        public static int  Divison(int userDivison, int userDivison2)
+        {
+            int userAnswear = userDivison / userDivison2;
+            return userAnswear;
+        } 
+        
+
+        
+
 
         public static int Add(int addFirstNumb, int addSecondNumb) 
         { 

@@ -4,7 +4,30 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Menu
+            Console.WriteLine("Välj ett av alternativen");
+
+            Console.WriteLine("1. Addition");
+            Console.WriteLine("2. Subtraktion");
+            Console.WriteLine("3. Multiplíkation");
+            Console.WriteLine("4. Division");
+
+            string menuChoice = Console.ReadLine();
+
+            switch (menuChoice)
+            {
+                case "1":
+                    break;
+                case "2":
+                    break;
+                case "3":
+                    break;
+                case "4":
+                    break;
+                default:
+                    Console.WriteLine("Fel inmatning vid menyval");
+                    break;
+            }
         }
 
 

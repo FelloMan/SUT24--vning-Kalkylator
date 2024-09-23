@@ -152,11 +152,22 @@ namespace SUT24_Övning_Kalkylator
             return areaSum;
         }
 
+
         public static int AreaOfSquare(int firstAreaSquare, int secondAreaSquare)
         {
             int areaOfSquare = firstAreaSquare * secondAreaSquare;
             return areaOfSquare;
         }
+
+
+        public static double AreaCircle (double circleRadius) //Cirkel
+        {
+
+            double sumAreaCircle = Math.PI * circleRadius * circleRadius ;
+            return sumAreaCircle;
+        }
+
+        
 
 
     }
